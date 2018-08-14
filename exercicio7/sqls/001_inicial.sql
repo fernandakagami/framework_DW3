@@ -1,0 +1,9 @@
+CREATE DATABASE exercicio7 COLLATE 'utf8_unicode_ci';
+
+CREATE TABLE alunos (
+    id INT NOT NULL AUTO_INCREMENT ,
+    nome VARCHAR(255) UNIQUE NOT NULL ,
+    nota DECIMAL(10,1) NOT NULL ,
+    PRIMARY KEY (id)
+)
+ENGINE = InnoDB;

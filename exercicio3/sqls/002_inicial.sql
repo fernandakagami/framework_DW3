@@ -1,0 +1,9 @@
+CREATE TABLE lanches (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT ,
+    nome VARCHAR(255) NOT NULL
+)
+ENGINE = InnoDB;
+
+ALTER TABLE pedidos ADD COLUMN lanche_id INT NOT NULL;
+
+ALTER TABLE pedidos ADD FOREIGN KEY (lanche_id) REFERENCES lanches(id);
